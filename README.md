@@ -1,2 +1,2 @@
 ## Live Demo
-Try the app: [bruceonyango.link/diabetes](https://bruceonyango.link/diabetes)
+<a href="https://bruceonyango.link/diabetes" target="_blank">bruceonyango.link/diabetes</a>
