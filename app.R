@@ -5,6 +5,7 @@ library(ggplot2)
 library(dplyr)
 library(reshape2)
 library(pROC)
+library(shinycssloaders)
 
 # ── Load everything once at startup ───────────────────────────────────────────
 model    <- readRDS("logistic_model.rds")
@@ -112,7 +113,7 @@ ui <- fluidPage(
   fluidRow(
     column(12, div(class="input-card",
       h4("Screening efficiency by risk group", style="color:#1a6e2e"),
-      plotOutput("plot_exec_bar", height="220px")
+      withSpinner(plotOutput("plot_exec_bar", height = "220px"))
         ))
     )
     ),
@@ -193,10 +194,10 @@ ui <- fluidPage(
 
       fluidRow(
         column(4,
-          div(class = "input-card", plotOutput("plot_class", height = "280px"))
+          div(class = "input-card", withSpinner(plotOutput("plot_class", height = "280px")))
         ),
         column(8,
-          div(class = "input-card", plotOutput("plot_means", height = "280px"))
+          div(class = "input-card", withSpinner(plotOutput("plot_means", height = "280px")))
         )
       ),
 
@@ -213,7 +214,7 @@ ui <- fluidPage(
                   selected = "Glucose")
               )
             ),
-            plotOutput("plot_hist", height = "260px")
+            withSpinner(plotOutput("plot_hist", height = "260px"))
           )
         )
       )
@@ -245,12 +246,12 @@ ui <- fluidPage(
                 choices  = c("BMI","Glucose","Age","Insulin","DiabetesPedigreeFunction"),
                 selected = "BMI"))
             ),
-            plotOutput("plot_scatter", height = "320px")
+            withSpinner(plotOutput("plot_scatter", height = "320px"))
           )
         ),
         column(5,
           div(class = "input-card",
-            plotOutput("plot_importance", height = "380px")
+            withSpinner(plotOutput("plot_importance", height = "380px"))
           )
         )
       ),
@@ -260,7 +261,7 @@ ui <- fluidPage(
       fluidRow(
         column(12,
           div(class = "input-card",
-            plotOutput("plot_age", height = "260px")
+            withSpinner(plotOutput("plot_age", height = "260px"))
           )
         )
       )
@@ -283,10 +284,10 @@ ui <- fluidPage(
 
       fluidRow(
         column(6,
-          div(class = "input-card", plotOutput("plot_roc",       height = "360px"))
+          div(class = "input-card", withSpinner(plotOutput("plot_roc",       height = "360px")))
         ),
         column(6,
-          div(class = "input-card", plotOutput("plot_threshold", height = "360px"))
+          div(class = "input-card", withSpinner(plotOutput("plot_threshold", height = "360px")))
         )
       ),
 
@@ -294,7 +295,7 @@ ui <- fluidPage(
 
       fluidRow(
         column(12,
-          div(class = "input-card", plotOutput("plot_metrics", height = "300px"))
+          div(class = "input-card", withSpinner(plotOutput("plot_metrics", height = "300px")))
         )
       )
     )
