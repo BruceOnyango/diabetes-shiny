@@ -1,9 +1,5 @@
 # Diabetes Risk Prediction
 
-**Course:** MIT 8103: Data Science Concepts  
-**Programme:** MSc Information Technology — School of Computing and Engineering Sciences  
-**Student:** Onyango Bruce | Admission No. 121063  
-
 ---
 
 ## Live Demo
@@ -275,34 +271,6 @@ The app has five tabs:
 - **48.7% of Insulin values** were imputed with the same median constant, contributing no individual-patient signal for nearly half the sample
 - **BMI_Category scored zero** in Random Forest importance — redundant when continuous BMI is present
 - All statistics are from a single 80/20 stratified split with seed 42
-
----
-
-## References
-
-American Diabetes Association. (2023). Standards of care in diabetes. *Diabetes Care*, *46*(Suppl. 1), S1–S291. https://doi.org/10.2337/dc23-Sint
-
-Breiman, L. (2001). Random forests. *Machine Learning*, *45*(1), 5–32. https://doi.org/10.1023/A:1010933404324
-
-Cohen, J. (1988). *Statistical power analysis for the behavioral sciences* (2nd ed.). Lawrence Erlbaum Associates.
-
-Hosmer, D. W., Lemeshow, S., & Sturdivant, R. X. (2013). *Applied logistic regression* (3rd ed.). John Wiley & Sons. https://doi.org/10.1002/9781118548387
-
-Knowler, W. C., Barrett-Connor, E., Fowler, S. E., Hamman, R. F., Lachin, J. M., Walker, E. A., & Nathan, D. M. (2002). Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin. *New England Journal of Medicine*, *346*(6), 393–403. https://doi.org/10.1056/NEJMoa012512
-
-Kuhn, M. (2008). Building predictive models in R using the caret package. *Journal of Statistical Software*, *28*(5), 1–26. https://doi.org/10.18637/jss.v028.i05
-
-National Institute of Diabetes and Digestive and Kidney Diseases. (1988). *Pima Indians Diabetes Database* [Dataset]. UCI Machine Learning Repository. https://archive.ics.uci.edu/ml/datasets/diabetes
-
-R Core Team. (2024). *R: A language and environment for statistical computing* (Version 4.3.3). R Foundation for Statistical Computing. https://www.R-project.org/
-
-Robin, X., Turck, N., Hainard, A., Tiberti, N., Lisacek, F., Sanchez, J.-C., & Muller, M. (2011). pROC: An open-source package for R and S+ to analyze and compare ROC curves. *BMC Bioinformatics*, *12*(1), 77. https://doi.org/10.1186/1471-2105-12-77
-
-Smith, J. W., Everhart, J. E., Dickson, W. C., Knowler, W. C., & Johannes, R. S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. *Proceedings of the Annual Symposium on Computer Application in Medical Care*, 261–265.
-
-Wickham, H. (2016). *ggplot2: Elegant graphics for data analysis* (2nd ed.). Springer. https://doi.org/10.1007/978-3-319-24277-4
-
-World Health Organisation. (2000). *Obesity: Preventing and managing the global epidemic* (WHO Technical Report Series No. 894). World Health Organisation. https://www.who.int/publications/i/item/obesity-preventing-and-managing-the-global-epidemic
 
 ---
 
